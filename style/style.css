@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+}
+
+html{
+    height: 100%;
+    background: url('/img/tranquil-universe-background.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body{
+    height: 100%;
+}
+h1, h2, h3{
+    color: white;
+    font-family: 'Satisfy', cursive;
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300px;
+}
+/* HEADER */
+header{
+    margin-top: 10px;
+}
+header .name{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 5px;
+    width: 10%;
+}
+header .navigation{
+    display: inline-block;
+    width: 80%;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+/* MAIN */
+.me{
+    text-align: center;
+    margin-top: 10%;
+}
+.me h2{
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.icons{
+    width: 10%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.icons a{
+    width: 10%;
+    margin-right: 15px;
+}
+
+.icons a img{
+    width: 20%;
+}
+
+.about{
+    background-color: rgb(24, 22, 33);
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    padding-bottom: 3%;
+    margin-bottom: 10%;
+}
+
+.about h3{
+    font-size: 50px;
+    padding-top: 5%;
+}
+.about p{
+    text-align: justify;
+    padding: 5% 10%;
+}
+.tecnologies{
+    width: 100%;
+    padding-top: 5%;
+}
+
+.tecnologies img{
+    width: 7%;
+    padding-right: 30px;
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+#contact h3{
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+address{
+    display: block;
+    font-style: italic;
+}
+
+address ul{
+    display: flex;
+    align-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+address ul li{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+address ul li a{
+    text-align: center;
+}
+
+address img{
+    width: 30%;
+}
+
+address span{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    margin-top: 10px;
+}
+footer{
+    margin-top: 10%;
+}
+
+footer div span{
+    display: block;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px){
+    
+    p{
+        font-size: 10px;
+    }
+
+    header .navigation{
+        width: 95%;
+    }
+    header nav ul li a{
+        font-size: 12px;
+    }
+
+    header .name{
+        font-size: 15px;
+    }
+
+    .me{
+        margin-top: 65px;
+    }
+
+    .me h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .icons{
+        display: flex;
+        width: 70%;
+        margin-left: 92px;
+        padding-top: 30px;
+    }
+    
+    .icons a{
+        width: 100%;
+    }
+    
+    .icons a img{
+        width: 20%;
+    }
+
+    .tecnologies{
+        display: flex;
+        margin: 0 auto;
+        width: 30%;
+        padding-top: 5%;
+    }
+
+    .tecnologies img{
+        width: 50%;
+        padding-right: 30px;
+    }
+
+    #contact h3{
+        font-size: 30px;
+        margin-left: 10px;
+    }
+
+    address span{
+        width: 40px;
+    }
+
+    footer div span{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1324px){
+    .icons{
+        display: flex;
+        width: 80%;
+        margin-left: 20%;
+        padding-top: 50px;
+    }
+    
+    .icons a{
+        width: 100%;
+    }
+    
+    .icons a img{
+        width: 10%;
+    }
+}
