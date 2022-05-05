@@ -181,7 +181,7 @@ footer div span{
     text-align: center;
 }
 
-/* @media only screen and (max-width: 480px){
+@media only screen and (max-width: 480px){
     
     p{
         font-size: 10px;
@@ -207,17 +207,6 @@ footer div span{
         margin-bottom: 20px;
     }
 
-    .icons{
-        display: flex;
-        width: 70%;
-        margin-left: 92px;
-        padding-top: 30px;
-    }
-    
-    .icons a img{
-        width: 50%;
-    }
-
     .tecnologies{
         display: flex;
         margin: 0 auto;
@@ -235,16 +224,12 @@ footer div span{
         margin-left: 10px;
     }
 
-    address span{
-        width: 40px;
-    }
-
     footer div span{
         font-size: 10px;
     }
 }
 
-@media only screen and (max-width: 1324px){
+/* @media only screen and (max-width: 1324px){
     .icons{
         display: flex;
         width: 80%;
