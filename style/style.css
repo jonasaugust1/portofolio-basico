@@ -28,17 +28,19 @@ p{
 }
 /* HEADER */
 header{
+    display: flex;
     margin-top: 10px;
 }
 header .name{
-    display: inline-block;
     font-size: 20px;
     margin-left: 5px;
     width: 10%;
 }
 header .navigation{
-    display: inline-block;
-    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 15px;
 }
 header nav ul{
     display: flex;
@@ -55,6 +57,10 @@ header nav ul li a{
     color: white;
     font-size: 20px;
 }
+
+header nav ul li a:hover{
+    background-color: blueviolet;
+}
 /* MAIN */
 .me{
     text-align: center;
@@ -68,18 +74,28 @@ header nav ul li a{
 }
 
 .icons{
-    width: 10%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
     padding-top: 30px;
 }
 
 .icons a{
+    display: flex;
+    justify-content: center;
     width: 10%;
-    margin-right: 15px;
 }
 
 .icons a img{
-    width: 20%;
+    width: 25%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.icons a img:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .about{
@@ -122,8 +138,10 @@ header nav ul li a{
 }
 
 address{
-    display: block;
+    display: flex;
+    justify-content: flex-end;
     font-style: italic;
+    width: 100%;
 }
 
 address ul{
@@ -145,7 +163,7 @@ address ul li a{
 }
 
 address img{
-    width: 30%;
+    width: 10%;
 }
 
 address span{
@@ -163,7 +181,7 @@ footer div span{
     text-align: center;
 }
 
-@media only screen and (max-width: 480px){
+/* @media only screen and (max-width: 480px){
     
     p{
         font-size: 10px;
@@ -196,12 +214,8 @@ footer div span{
         padding-top: 30px;
     }
     
-    .icons a{
-        width: 100%;
-    }
-    
     .icons a img{
-        width: 20%;
+        width: 50%;
     }
 
     .tecnologies{
@@ -245,4 +259,4 @@ footer div span{
     .icons a img{
         width: 10%;
     }
-}
+} */
