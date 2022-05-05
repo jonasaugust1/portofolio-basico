@@ -162,6 +162,7 @@ address ul li{
 }
 address ul li a{
     text-align: center;
+    text-decoration: none;
 }
 
 address img{
@@ -169,6 +170,7 @@ address img{
 }
 
 address span{
+    display: block;
     color: white;
     font-family: 'Poppins', sans-serif;
     align-self: center;
