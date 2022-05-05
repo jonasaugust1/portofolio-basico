@@ -116,13 +116,15 @@ header nav ul li a:hover{
     padding: 5% 10%;
 }
 .tecnologies{
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
     padding-top: 5%;
 }
 
 .tecnologies img{
-    width: 7%;
-    padding-right: 30px;
+    width: 5%;
+    /* padding-right: 30px; */
 }
 
 #contact{
