@@ -52,10 +52,14 @@ header nav ul li{
     list-style: none;
 }
 
+
 header nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    background-color: none;
+    transition-property: background;
+    transition-duration: 1s;
 }
 
 header nav ul li a:hover{
@@ -127,10 +131,63 @@ header nav ul li a:hover{
     /* padding-right: 30px; */
 }
 
+#formation{
+    background-color: rgb(24, 22, 33);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#formation h2{
+    font-family: 'Satisfy', cursive;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+#formation ul li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#formation ul li h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#formation ul li img{
+    width: 10%;
+    margin-left: auto;
+}
+
+#portfolio h2{
+    font-size: 70px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    margin: 40px 0 40px 0;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.projects img{
+    width: 50%;
+}
+
+.projects span{
+    align-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin: 0 auto;
+}
+
 #contact{
     display: flex;
     align-items: center;
-    margin-top: 3%;
+    margin-top: 10%;
 }
 
 #contact h3{
@@ -152,7 +209,6 @@ address ul{
     text-decoration: none;
     list-style: none;
 }
-
 
 address ul li{
     display: flex;
@@ -187,7 +243,7 @@ footer div span{
 
 @media only screen and (max-width: 480px){
     
-    p{
+    p, .projects span{
         font-size: 10px;
     }
 
@@ -198,7 +254,7 @@ footer div span{
         font-size: 12px;
     }
 
-    header .name{
+    header .name {
         font-size: 15px;
     }
 
@@ -206,7 +262,7 @@ footer div span{
         margin-top: 65px;
     }
 
-    .me h2{
+    .me h2, #portfolio h2, #formation h2{
         font-size: 50px;
         margin-bottom: 20px;
     }
@@ -221,6 +277,9 @@ footer div span{
     .tecnologies img{
         width: 50%;
         padding-right: 30px;
+    }
+    #formation ul li h3{
+        font-size: 20px
     }
 
     #contact h3{
